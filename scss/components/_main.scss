@@ -1,0 +1,92 @@
+/* This is our main file for css/sass */
+/*
+For each element, consider:
+-what are you targeting
+-transition
+-easing
+*/
+
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	box-sizing: border-box;
+
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+    
+ background:url(../veg.jpg) no-repeat center center fixed; 
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+html {
+	font-family: $oswald-font;
+    color: $font-color;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+
+.main {
+    width: 60%;
+    margin: 5em auto;
+
+}
+
+h1 {
+	font-size: 3em;
+    text-align: center;
+    padding-bottom: 1.5em;
+
+}
+
+figure{
+    display: inline-block;
+	text-align: center;
+    width: 50%;
+    float:left;
+    margin: 0;
+}
+
+a {
+    text-align: center;
+	list-style-type: none;
+}
+
+i{
+    font-size: 100px;
+}
+
+
+h2 {
+	font-size: 2em;
+}
+
+figcaption{
+    font-size: 1.2em;
+}
+
+
+.rotate {
+	@include rotate;
+}
+
+
+

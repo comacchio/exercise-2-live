@@ -1,0 +1,109 @@
+/* This file imports all of your scss partials to be compiled into one stylesheet, which you can then attach to your html.
+
+All files that are prefixed with an underscore "_name-of-file.scss" are called partials  - meaning their css isnt compiled unless its imported into an unprefixed .scss file */
+/* This is a file for all our variables */
+/*are placeholders for storing information that you want to reuse throughout your styles
+
+You can store things like colours, font-stacks, or any css value you think you might want to reuse.
+
+SCSS uses the '$' symbol to declare variables */
+/* This file contains all our mixins 
+Mixins are reusable content */
+/* This is our main file for css/sass */
+/*
+For each element, consider:
+-what are you targeting
+-transition
+-easing
+*/
+@-moz-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-ms-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-o-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-webkit-viewport {
+  width: device-width;
+  scale: 1; }
+
+@viewport {
+  width: device-width;
+  scale: 1; }
+
+/* line 15, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/components/main */
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  background: url(../veg.jpg) no-repeat center center fixed;
+  background-size: cover; }
+
+/* line 30, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/components/main */
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* line 34, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/components/main */
+html {
+  font-family: 'Oswald', sans-serif;
+  color: #ffffff; }
+
+/* line 39, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/components/main */
+body {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+/* line 47, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/components/main */
+.main {
+  width: 60%;
+  margin: 5em auto; }
+
+/* line 53, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/components/main */
+h1 {
+  font-size: 3em;
+  text-align: center;
+  padding-bottom: 1.5em; }
+
+/* line 60, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/components/main */
+figure {
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+  float: left;
+  margin: 0; }
+
+/* line 68, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/components/main */
+a {
+  text-align: center;
+  list-style-type: none; }
+
+/* line 73, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/components/main */
+i {
+  font-size: 100px; }
+
+/* line 78, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/components/main */
+h2 {
+  font-size: 2em; }
+
+/* line 82, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/components/main */
+figcaption {
+  font-size: 1.2em; }
+
+/* line 87, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/components/main */
+.rotate {
+  transition-duration: 0.6s;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  overflow: hidden; }
+  /* line 20, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/mixins */
+  .rotate:hover {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }

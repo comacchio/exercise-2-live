@@ -1,0 +1,23 @@
+/* This file contains all our mixins 
+Mixins are reusable content */
+
+
+
+@mixin rotate{
+    -webkit-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    
+    transition-property: transform;
+
+    overflow:hidden;
+
+		&:hover {
+			transform:rotate(180deg);
+		}
+    }
