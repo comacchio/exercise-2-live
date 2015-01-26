@@ -81,22 +81,23 @@ figure {
 
 /* line 68, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/components/main */
 a {
+  color: #ffffff;
   text-align: center;
   list-style-type: none; }
 
-/* line 73, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/components/main */
+/* line 74, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/components/main */
 i {
   font-size: 100px; }
 
-/* line 78, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/components/main */
+/* line 79, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/components/main */
 h2 {
   font-size: 2em; }
 
-/* line 82, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/components/main */
+/* line 83, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/components/main */
 figcaption {
   font-size: 1.2em; }
 
-/* line 87, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/components/main */
+/* line 88, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/components/main */
 .rotate {
   transition-duration: 0.6s;
   transition-property: -webkit-transform;
@@ -107,3 +108,66 @@ figcaption {
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
             transform: rotate(180deg); }
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?49802410');
+  src: url('../fonts/fontello.eot?49802410#iefix') format('embedded-opentype'), url('../fonts/fontello.woff?49802410') format('woff'), url('../fonts/fontello.ttf?49802410') format('truetype'), url('../fonts/fontello.svg?49802410#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?49802410#fontello') format('svg');
+  }
+}
+*/
+/* line 22, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/components/fontello */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+/* line 53, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/components/fontello */
+.icon-table:before {
+  content: '\e800'; }
+
+/* '' */
+/* line 54, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/components/fontello */
+.icon-farm:before {
+  content: '\e801'; }
+
+/* '' */
+/* line 2, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/components/fontello-codes */
+.icon-table:before {
+  content: '\e800'; }
+
+/* '' */
+/* line 3, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-2-live/scss/components/fontello-codes */
+.icon-farm:before {
+  content: '\e801'; }
+
+/* '' */
